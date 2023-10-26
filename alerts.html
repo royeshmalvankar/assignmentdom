@@ -3,26 +3,43 @@
 	<head>
 		<title>Showing Alerts</title>
 	</head>
+    <style>
+        #btn{
+            width: 21%;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
 	<body>
+        <div id="input">
+        <input type="text" id="in" name="Firstname" placeholder="First Name">
+        <input type="text" id="in1" name="Lastname" placeholder="Last Name">
+        <input type="text" id="in2" name="Fullname" placeholder="Full Name">
+    </div>
+    <br>
+    <br>
+    <div id="btn">
 		<button id="bt1" onclick="showFirstName()">FIRSTNAME</button>
 		<button id="bt2" onclick="showLastName()">LASTNAME</button>
 		<button id="bt3" onclick="showFullName()">FIRSTNAME NAME</button>
+    </div>
+
 		<script type="text/javascript">
 
-            let btn1=document.getElementById("bt1")
-            let btn2=document.getElementById("bt2")
-            let btn3=document.getElementById("bt3")
+            let inp=document.getElementById("in")
+            let inp1=document.getElementById("in1")
+            let inp2=document.getElementById("in2")
 
             function showFirstName() {
-			    alert("Royesh")
+			    alert(inp.value)
 			}
 
             function showLastName() {
-                alert("Malvankar")          
+                alert(inp1.value)          
             }
 
             function showFullName() {
-                alert("Royesh Malvankar")
+                alert(inp2.value)
                                 
             }
         </script>
